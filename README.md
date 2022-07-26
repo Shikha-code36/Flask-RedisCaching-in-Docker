@@ -1,6 +1,7 @@
 # flask-api-with-caching
 Flask Api with redis caching in docker
 
+* Caching Timeout - 120s
 - [Data Stored in Redis Cache](https://flaskredisapi.herokuapp.com/) 
 
 - API that takes device ID and returns device’s latest information in response [https://flaskredisapi.herokuapp.com/getdata/<device_fk_id>>](https://flaskredisapi.herokuapp.com/getdata/<device_fk_id>)
