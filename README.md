@@ -1,6 +1,6 @@
 # Flask API with Redis Caching in Docker
 
-This is a simple Flask API that uses Redis caching and can be run in a Docker container. The API has the following endpoints:
+This is a simple Flask API project that uses Redis caching and can be run in a Docker container. The API has the following endpoints:
 
 - `/getdata/<device_fk_id>`: Returns the latest information for a given device ID, including device_fk_id, latitude, longitude, time_stamp, sts, and speed.
 - `/getlocation/<device_fk_id>`: Returns the start location and end location for a given device ID as a tuple of (latitude, longitude).
@@ -9,7 +9,7 @@ This is a simple Flask API that uses Redis caching and can be run in a Docker co
 
 ## Usage
 
-1. Clone the repository: `git clone https://github.com/<username>/flask-api-with-caching.git`
+1. Clone the repository: `git clone https://github.com/<username>/Flask-RedisCaching-in-Docker.git`
 2. Navigate to the project directory in your terminal.
 3. Build the Docker image: `docker build -t flask-api-with-caching`.
 4. Start the Docker containers: `docker-compose`.
@@ -151,7 +151,7 @@ Takes in device ID, start time, and end time and returns all the location points
 ## Files
 
 ```
-flask-api-with-RedisCaching
+Flask-RedisCaching-in-Docker
 ├── app/
 │ ├── init.py
 │ ├── getData.py
