@@ -18,12 +18,12 @@ def create_app():
 
     cache.init_app(app)
 
-    from app.setData import set_bp
+    from app.allData import data_bp
     from app.getData import getdata_bp
     from app.location import locations
     from app.getInfo import getinfo
 
-    app.register_blueprint(set_bp)
+    app.register_blueprint(data_bp)
     app.register_blueprint(getdata_bp)
     app.register_blueprint(locations)
     app.register_blueprint(getinfo)

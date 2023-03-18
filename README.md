@@ -6,7 +6,6 @@ This is a simple Flask API that uses Redis caching and can be run in a Docker co
 - `/getlocation/<device_fk_id>`: Returns the start location and end location for a given device ID as a tuple of (latitude, longitude).
 - `/getinfo`: Takes in device ID, start time, and end time and returns all the location points as a list of latitude, longitude, and time stamp.
 
-The caching timeout for this API is set to 120 seconds.
 
 ## Usage
 
@@ -155,7 +154,7 @@ flask-api-with-RedisCaching
 │ ├── getData.py
 │ ├── getInfo.py
 │ ├── location.py
-│ └── setData.py
+│ └── allData.py
 ├── utils/
 │ └── raw_data.csv
 ├── .gitignore
@@ -171,7 +170,7 @@ flask-api-with-RedisCaching
     - `getData.py`: Contains the code for the `/getdata/<device_fk_id>` endpoint.
     - `getInfo.py`: Contains the code for the `/getinfo` endpoint.
     - `location.py`: Contains the code for the `/getlocation/<device_fk_id>` endpoint.
-    - `setData.py`: Contains the code for the `/setdata` endpoint.
+    - `allData.py`: Contains the code for the `/alldata` endpoint.
 - `utils/`: Contains the raw data in `raw_data.csv` file.
 - `.gitignore`: Specifies files that should be ignored by Git.
 - `data.py`: Contains functions for retrieving data.
