@@ -2,7 +2,7 @@
 Flask Api with redis caching in docker
 
 * **Caching Timeout** - 120s
-- [Data is Stored in Redis Cache]
+- Data is Stored in Redis Cache
 
 - API that takes device ID and returns device’s latest information in response [http://127.0.0.1:5000/getdata/<device_fk_id>>](http://127.0.0.1:5000/getdata/<device_fk_id>)
 * ex- [http://127.0.0.1:5000/getdata/25029](https://127.0.0.1:5000/getdata/25029) 
