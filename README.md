@@ -23,7 +23,7 @@ This is a simple Flask API project that uses Redis caching and can be run in a D
 
 Returns the latest information for all device ID, including device_fk_id, latitude, longitude, time_stamp, sts, and speed.
 
-**Request URL:** `http://127.0.0.1:5000/allData`
+**Request URL:** `http://127.0.0.1:5000/alldata`
 
 **Request Method:** GET
 
