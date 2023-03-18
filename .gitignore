@@ -3,3 +3,6 @@
 # ignore cache
 __pycache__
 *.pyc
+
+#ignore DB instance
+instance/
