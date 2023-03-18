@@ -9,10 +9,13 @@ This is a simple Flask API that uses Redis caching and can be run in a Docker co
 
 ## Usage
 
-1. Clone this repository to your local machine.
+1. Clone the repository: `git clone https://github.com/<username>/flask-api-with-caching.git`
 2. Navigate to the project directory in your terminal.
-3. Run `docker-compose up --build` to start the API and Redis cache in Docker containers.
-4. Use `http://127.0.0.1:5000/` as the base URL for your requests.
+3. Build the Docker image: `docker build -t flask-api-with-caching`.
+4. Start the Docker containers: `docker-compose`.
+5. Access the API endpoints at `http://127.0.0.1:5000/`
+
+- **Note** Replace `<username>` with your GitHub username in step 1.
 
 ### Endpoints
 
