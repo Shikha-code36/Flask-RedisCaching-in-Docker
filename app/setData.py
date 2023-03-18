@@ -10,7 +10,7 @@ def create_tables():
     db.create_all()
     populate_database_from_csv()
 
-@set_bp.route('/set', methods=['GET'])
+@set_bp.route('/allData', methods=['GET'])
 @cache.cached(timeout=120, query_string=True)
 def set():
     data = Data.query.order_by(Data.sts.desc()).all()
